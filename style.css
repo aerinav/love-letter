@@ -14,14 +14,15 @@
 
 @font-face {
 	font-family: pixles;
-	src: url(https://fonts.gstatic.com/s/loveyalikeasister/v14/R70EjzUBlOqPeouhFDfR80-0FhOqJubN-BeL9Xxd.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/loveyalikeasister/v14/R70EjzUBlOqPeouhFDfR80-0FhOqJubN-BeL9Xxd.woff2)
+		format('woff2');
 }
 
 body {
 	display: flex;
 	overflow: hidden;
 	font-family: pixles;
-	font-size: 15px;
+	font-size: 16px;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -33,7 +34,6 @@ body {
 	width: 100%;
 	background-color: #fae1dd;
 }
-
 
 /* ------------------------------------------------------------------------------------
   
@@ -66,7 +66,7 @@ body {
 
 .envelope:before {
 	background-color: #f08080;
-	content: "";
+	content: '';
 	position: absolute;
 	width: 212px;
 	height: 212px;
@@ -88,12 +88,12 @@ body {
 }
 
 .card:before {
-	content: "";
+	content: '';
 	position: absolute;
 	border: 3px solid #003049;
 	border-style: dotted;
 	width: 240px;
-	heighT: 140px;
+	height: 140px;
 	left: 12px;
 	top: 12px;
 }
@@ -123,7 +123,7 @@ body {
 
 .heart:before,
 .heart:after {
-	content: "";
+	content: '';
 	background-color: #d62828;
 	border-radius: 50%;
 	height: 30px;
@@ -142,7 +142,7 @@ body {
 }
 
 .hearts {
-	position: absolute
+	position: absolute;
 }
 
 .one,
@@ -170,7 +170,7 @@ body {
 .four:after,
 .five:before,
 .five:after {
-	content: "";
+	content: '';
 	background-color: red;
 	border-radius: 50%;
 	height: 10px;
@@ -235,7 +235,7 @@ body {
 
 .front:before {
 	position: absolute;
-	content: "";
+	content: '';
 	border-left: 300px solid #f8ad9d;
 	border-top: 195px solid transparent;
 	left: -120px;
@@ -281,7 +281,7 @@ body {
 
 .modal-dialog {
 	position: relative;
-	max-width: 800px;
+	max-width: 650px;
 	max-height: 80vh;
 	border-radius: 5px;
 	background: var(--white);
@@ -289,7 +289,7 @@ body {
 	cursor: default;
 }
 
-.modal-dialog>* {
+.modal-dialog > * {
 	padding: 1rem;
 }
 
@@ -308,7 +308,7 @@ body {
 	font-size: 1.5rem;
 }
 
-.modal p+p {
+.modal p + p {
 	margin-top: 1rem;
 }
 
@@ -456,19 +456,19 @@ body .game_intro input {
 	display: none;
 }
 
-body .game_intro input[type=radio]:checked+div {
+body .game_intro input[type='radio']:checked + div {
 	opacity: 1;
 	/* top: 140px; */
 	transition: all 0.5s 0.8s;
 	pointer-events: all;
 }
 
-body .game_intro input[type=radio]:checked+div label {
+body .game_intro input[type='radio']:checked + div label {
 	opacity: 1;
 	bottom: -10px;
 }
 
-body .game_intro input#intro-1[type=radio]:checked+div {
+body .game_intro input#intro-1[type='radio']:checked + div {
 	/* top: 140px; */
 	opacity: 0;
 	transition: all 0.5s 0.8s;
@@ -477,24 +477,24 @@ body .game_intro input#intro-1[type=radio]:checked+div {
 	pointer-events: all;
 }
 
-body .game_intro input#intro-1[type=radio]:not(:checked)+div {
+body .game_intro input#intro-1[type='radio']:not(:checked) + div {
 	opacity: 0;
 	/* top: 160px; */
 	transition: all 0.5s 0.8s;
 }
 
-body .game_intro input[type=radio]#intro-5:checked+div+input+div {
+body .game_intro input[type='radio']#intro-5:checked + div + input + div {
 	opacity: 0;
 	pointer-events: none !important;
 }
 
-body .game_intro input[type=radio]#intro-5:checked+div {
+body .game_intro input[type='radio']#intro-5:checked + div {
 	opacity: 0;
 	-webkit-animation: showResponse 2s 2s forwards;
 	animation: showResponse 2s 2s forwards;
 }
 
-body .game_intro input[type=radio]#intro-6:checked+.overlay {
+body .game_intro input[type='radio']#intro-6:checked + .overlay {
 	display: none;
 }
 
